@@ -2,13 +2,15 @@
 
 ### Introduction
 
-This repository contains some example code for Urbit. There are generators (short `:dojo` commands), libraries (to be loaded into `:dojo`), `%ford` web examples, `%gall` applications, and marks and structures that these example `%gall` applications use.
+This repository contains some example code for Urbit.
+
+There are generators (short `:dojo` commands), libraries (to be loaded into `:dojo`), `%ford` web examples, `%gall` applications, and marks and structures that these example `%gall` applications use.
 
 ### Installation
 
-Clone this repo somewhere. Let's call it `/examples/path`.
+First, you'll need a running urbit.  Follow our [install instructions](https://urbit.org/docs/using/install) to create a comet, or use a [fake ship](https://urbit.org/~~/fora/posts/~2017.1.5..21.31.04..20f3~/).  For developmet, it's usually a good idea to use a disposable ship (either a comet or a fake one).
 
-On a [running urbit](https://urbit.org/docs/using/install) (it's best to use comets or [fake ships](https://urbit.org/~~/fora/posts/~2017.1.5..21.31.04..20f3~/) for these examples) create an `%examples` desk (branch) in `:dojo`:
+On your Urbit, create an `%examples` desk (branch) in `:dojo`:
 
     ~your-urbit:dojo> |merge %examples our %home
 
@@ -21,7 +23,9 @@ Then set your current directory to `%examples`, `|serve` your `%examples` desk's
 If your urbit was installed at `/urbit/path` now you can find your
 `%examples` desk at `/urbit/path/your-urbit/examples`.
 
-Copy in all the `examples` files to your `%examples` desk. In a Unix Bash shell:
+Clone this repo somewhere. Let's call it `/examples/path`.
+
+Copy in all the `examples` files to your `%examples` desk. In Unix:
 
     $ for dir in {app,gen,lib,mar,sur,web}; do cp -r /examples/path/$dir* /urbit/path/your-urbit/examples; done
 
