@@ -3,18 +3,20 @@
 ::
 ::  /hook/hymn/ford7/pub
 ::
-/=  gas  
+/=  gas
 /$  fuel
 ::
 ^-  manx
 ;html
   ;head
     ;meta(charset "utf-8");
-    ;title: %ford Example 7
+    ;title: Examples - Ford 7
+    ;link(rel "stylesheet", type "text/css", href "/~~/pages/ford/ford.css");
   ==
   ;body
+    ;h1#title: %ford: 7
     ;div
-      ;h1: %ford Example 7 — Page Variables
+      ;h1: Page Variables
       ;div.who: Whoami? {<(~(get ju aut.ced.gas) 0)>}
       ;div.where: Whereami? {(spud s.bem.gas)}
       ;div.what: Whatcase? {(scow %ud p.r.bem.gas)}

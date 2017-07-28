@@ -10,11 +10,13 @@
 ;html
   ;head
     ;meta(charset "utf-8");
-    ;title: %ford Example 8
+    ;title: Examples - Ford 8
+    ;link(rel "stylesheet", type "text/css", href "/~~/pages/ford/ford.css");
   ==
   ;body
+    ;h1#title: %ford: 8
     ;div
-      ;h1: %ford Example 8 — Query String Parameters
+      ;h1: Query String Parameters
       ;div: Do you have a code?
       ;div: ?code={<(fall (~(get by qix.gas) %code) '')>}
     ==

@@ -6,11 +6,13 @@
 ;html
   ;head
     ;meta(charset "utf-8");
-    ;title: Exercise 1
+    ;title: Examples - Ford 1
+    ;link(rel "stylesheet", type "text/css", href "/~~/pages/ford/ford.css");
   ==
   ;body
+    ;h1#title: %ford: 1
     ;div
-      ;h1: Exercise 1 — Simple HTML
+      ;h1: Simple HTML
       ;p: As you may notice, Urbit has no problem talking to the web.
     ==
   ==

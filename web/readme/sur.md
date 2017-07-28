@@ -4,21 +4,41 @@ title: Structures
 
 # Structures
 
-A Hoon structure is simply one or several cores defining any number of molds. Keeping structures in one place allows for them to be used in multiple places, like apps, app marks and app libraries (see `:mesh` as a good example of this).
+A Hoon structure file is simply a module containing one or several cores defining any number of molds.
 
-You'll see the following syntax in an app, mark or library when declaring to import a structure file via `%ford`:
+> If you're not viewing this from your urbit's web interface, follow our installation instructions [on Github](https://github.com/urbit/examples) and come back here to run these examples!
 
-    /-  name
+Structures live under `/sur` in a `%clay` desk. Keeping structures in one place allows for them to be used in multiple places, like apps, app marks and app libraries. Basically, libraries are for sharing code, and structures are for sharing data structures to use in Hoon code. See the [`/lib README`](/~~/readme/lib) for more details on libraries.
 
-Note the two spaces between the `/-` and the file name; the `%ford` rune here uses tall form. A structure file within a folder will use the syntax:
+Just like you can add library cores to your `:dojo` subject to access the code arms within them, you can add structure cores to your `:dojo` subject to access the mold arms within them. This uses the same library importing syntax except with the `%ford` rune `/-` for structures instead of `/+`.
 
-    /-  folder-name
+Load a structure `/sur/name.hoon` into your current `:dojo` subject using the following command syntax:
 
-If the structure file contains only a single, unarmed mold (see `/sur/mail/message`), you can simply use the structure file name to reference the single mold. A good example is `:ping`.
+    ~your-urbit:dojo/examples> /-  name
 
-If the structure is a core and you wish to use one of the mold arms within the core, in your code you must first evaluate the core and then specify the arm within that. You can use the irregular syntax for the [rap](https://urbit.org/docs/hoon/twig/tis-flow/gal-rap/) rune to do exactly this. An example would be accessing the `++friend` mold within `/sur/mesh` with the syntax `friend:mesh` (like the syntax we use in the `lib` readme). However, as you can see in the `:mesh` app code, a cleaner alternative is to simply add the `/sur/mesh` core to your subject with the syntax at the top of the file:
+(Note the two spaces - this is a tall-form `%ford` rune)
 
-    /-  mesh
-    [. mesh]
+Each structure arm maps to a [mold](https://urbit.org/~~/docs/hoon/basic/), an idempotent validator gate. You can cast a `:dojo` noun into the corresponding typed data of a structure mold, if the noun is in the mold's span. If the structure is a core with arms, the syntax used to access the arm is `arm:core`. For example, the `clicks` mold for the `:click` app (the value held in the app state of `:click`): this is just an unsigned decimal number (`@ud`) counting the number of times the app has been "clicked" (poked). From `:dojo`:
 
-Then, all of the arms within that core are accessible directly in the app code, like `++friend`, `++color` and `++network`. These get evaluated against the new subject which now contains the structure core.
+    ~your-urbit:dojo/examples> /-  click
+    ~your-urbit:dojo/examples> `clicks:click`42
+    42
+
+If the structure file contains only a single, unarmed mold, you can simply use the structure file name to reference the single mold. A good example is the `ping-message` structure.
+
+    ~your-urbit:dojo/examples> /-  ping-message
+    ~your-urbit:dojo/examples> `ping-message`[~zod 'Hey, neighbor!']
+    [to=~zod message='Hey, neighbor!']
+
+When you're done, simply enter a blank `/-` to reset `:dojo` to the normal
+subject.
+
+<br />
+
+View a `README` of a `%gall` example app here that uses custom structures, or just start to play around with these in your `:dojo`:
+
+* [`/-  click`](/~~/readme/app/click)
+* [`/-  mail-message`](/~~/readme/app/mail)
+* [`/-  mail-send`](/~~/readme/app/mail)
+* [`/-  mesh`](/~~/readme/app/mesh)
+* [`/-  ping-message`](/~~/readme/app/ping)

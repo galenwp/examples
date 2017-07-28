@@ -23,8 +23,8 @@ body {
   margin-right: auto;
 }
 
-h1#name {
-  font-family: scp
+h1#title {
+  font-family: scp, monospace;
 }
 
 h1 {

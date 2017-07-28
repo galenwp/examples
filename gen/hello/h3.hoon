@@ -1,6 +1,8 @@
 ::  Keyword argumented hello world example. Defaults if no sample given.
 ::  Run in dojo with:
 ::
+::    +hello/h3, =txt %comets
+::    +hello/h3, =txt %moons
 ::    +hello/h3, =txt %planets
 ::    +hello/h3, =txt %stars
 ::    +hello/h3, =txt %galaxies

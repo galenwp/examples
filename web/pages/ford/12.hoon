@@ -21,11 +21,13 @@
 ;html
   ;head
     ;meta(charset "utf-8");
-    ;title: %ford Example 12
+    ;title: Examples - Ford 12
+    ;link(rel "stylesheet", type "text/css", href "/~~/pages/ford/ford.css");
   ==
   ;body
+    ;h1#title: %ford: 12
     ;div
-      ;h1: %ford Example 12 — Loading Resources by Number
+      ;h1: Loading Resources by Number
       ;*  posts
     ==
   ==

@@ -7,6 +7,7 @@
 ::
 |%
 ++  test
+  |=  *
   =/  a/(list @u)  ~[5 2 3 8 1 13 1]
   :*  insertion-sort+(insertion-sort a)
       bubble-sort+(bubble-sort a)

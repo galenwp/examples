@@ -24,11 +24,13 @@
 ;html
   ;head
     ;meta(charset "utf-8");
-    ;title: %ford Example 9
+    ;title: Examples - Ford 9
+    ;link(rel "stylesheet", type "text/css", href "/~~/pages/ford/ford.css");
   ==
   ;body
+    ;h1#title: %ford: 9
     ;div
-      ;h1: %ford Example 9 — Computing With Parameters
+      ;h1: Computing With Parameters
       ;div: {<(fib arg)>}
     ==
   ==

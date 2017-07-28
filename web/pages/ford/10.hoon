@@ -11,11 +11,13 @@
 ;html
   ;head
     ;meta(charset "utf-8");
-    ;title: %ford Example 10
+    ;title: Examples - Ford 10
+    ;link(rel "stylesheet", type "text/css", href "/~~/pages/ford/ford.css");
   ==
   ;body
+    ;h1#title: %ford: 10
     ;div
-      ;h1: %ford Example 10 — Breaking Code Into Parts
+      ;h1: Breaking Code Into Parts
       ;div: {<(fib 70)>}
     ==
   ==
