@@ -1,18 +1,22 @@
 # `:pong`
 
-This app demonstrates how to poke an app with an urbit name.
+Source:
 
-To run, start the app from `:dojo` on two urbits:
+* `/app/pong.hoon`
+
+`:dojo` (you will need two running urbits to send and receive a message):
 
     ~your-urbit-1:dojo/examples> |start %pong
 
     ~your-urbit-2:dojo/examples> |start %pong
 
-Then, from your first urbit's `:dojo`:
-
     ~your-urbit-1:dojo/examples> :pong &urbit ~your-urbit-2
 
-Your second urbit should receive:
+<br />    
+
+This app demonstrates how to poke an app with an urbit name.
+
+Start the app on two urbits in `:dojo` and send a pong to your second urbit from your first urbit using the command above. Your second urbit should receive:
 
     [%pong 'Incoming pong!']
     [%pong %received 'Pong']

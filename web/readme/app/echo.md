@@ -1,15 +1,16 @@
 # `:echo`
 
-This app demonstrates how to enter input from the command line and print it out
-in the `:dojo`.
+Source:
 
-To run, start the app from `:dojo`:
+* `/app/echo.hoon`
+
+`:dojo`:
 
     ~your-urbit:dojo/examples> |start %echo
-
-and poke the app with any noun:
-
     ~your-urbit:dojo/examples> :echo {insert any noun}
 
-Here the app simply printfs the input and then returns an empty list of moves
+<br />    
+
+This app demonstrates how to enter input from the command line and print it out
+in the `:dojo`. Here the app simply printfs the input and then returns an empty list of moves
 and its app state unchanged.

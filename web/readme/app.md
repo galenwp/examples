@@ -20,7 +20,10 @@ and poke its `++poke-mark-name` arm like this:
 
     ~your-urbit:dojo/examples> :name &mark-name {insert noun of mark &mark-name}
 
-(check out the [`mar` README](/~~/readme/mar) for a better understanding of what marks are and how they work in Urbit)
+where the mark is pointing to a mark source file in `/mar`. Some of these example apps use *structures* too, or shared molds stored in files in `/sur`. To understand how these work better, check out their `README`'s:
+
+* [Marks](/~~/readme/mar)
+* [Structures](/~~/readme/sur)
 
 In the case that the app has a web interface, its web UI will be served at the URL:
 

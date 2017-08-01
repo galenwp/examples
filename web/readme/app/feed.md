@@ -1,5 +1,19 @@
 # `:feed`
 
+Source:
+
+* `/web/pages/feed/init.hoon`
+* `/web/pages/feed/init.js`
+* `/web/pages/feed.hoon`
+* `/web/pages/feed/feed.js`
+* `/web/pages/feed/feed.css`
+
+Web:
+
+    http://localhost:8443/~~/pages/feed/init
+
+<br />
+
 `:feed` is a vanilla microblogging web UI built using `:talk` as the backend. This basic UI works well to highlight the core functionality of our current `urb.js` and `:talk` web API's.
 
 `:feed` works by first creating a `%feed` `:talk` station, then loading that station through the `:feed` web UI which will present a chronological feed of public `:talk` posts by other ships. When you subscribe and unsubscribe to other ships' `%public` `:talk` stations (which boot with all urbits by default) through the web UI, you add those to your `%feed` station's list of subscriptions. New posts will push to the top of your feed in real time.

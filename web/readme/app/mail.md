@@ -1,24 +1,36 @@
 # `:mail`
 
-This allows urbits to send typed, email-like message over the network.
+Source:
 
-You will need to have two running urbits to send a message. To run, start the app from `:dojo` on both urbits:
+* `/app/mail.hoon`
+* `/mar/mail/message.hoon`
+* `/mar/mail/send.hoon`
+* `/sur/mail/message.hoon`
+* `/sur/mail/send.hoon`
+* `/web/pages/mail.hoon`
+
+`:dojo` (you will need two running urbits to send and receive a message):
 
     ~your-urbit-1:dojo/examples> |start %mail
 
     ~your-urbit-2:dojo/examples> |start %mail
 
-Then, from your browser, visit both:
 
-    http://localhost:8443~~/pages/mail
+Web:
 
-and:
+    http://localhost:8443/~~/pages/mail
+
+    and
 
     http://localhost:8444/~~/pages/mail
 
-Running in an incognito tab might help keep your cookies clean here.
+> Running in an incognito tab might help keep your cookies clean here.
 
-Fill out the `To` field in the page of your first urbit with the name of second urbit (don't forget `@p` syntax: prefix the name/address with a `~`!).
+<br />    
+
+This allows urbits to send typed, email-like message over the network.
+
+Start the app on two urbits in `:dojo` and visit the web interfaces of both. Fill out the `To` field in the page of your first urbit with the name of second urbit (don't forget `@p` syntax: prefix the name/address with a `~`!).
 
 Then, fill out the `Subject` and `Body` forms with text.
 

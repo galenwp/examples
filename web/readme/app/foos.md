@@ -1,20 +1,25 @@
 # `:foos`
 
+Source:
+
+* `/app/foos.hoon`
+* `/web/pages/foos.hoon`
+
+`:dojo`:
+
+    ~your-urbit:dojo/examples> |start %foos
+
+Web:
+
+    http://localhost:8443/~~/pages/foos
+
+<br />    
+
 This app records foosball scores (one wins by scoring 10) into its state. It
 then sends the updated state back to frontend, which then calculates and
 displays the standings.
 
-To run, start the app from `:dojo`:
-
-    ~your-urbit:dojo/examples> |start %foos
-
-Then, in the browser, visit:
-
-    http://localhost:8443/~~/pages/foos
-
-Fill in a valid result (each name must be a string, each score must be between
-0-10, and the winner must have 10). You can open another tab and watch the
-standings remain in sync.
+Start the app in `:dojo` and visit the web interface. Fill in a valid result (each name must be a string, each score must be between 0-10, and the winner must have 10). You can open another tab and watch the standings remain in sync.
 
 Let's walk through what happens when a valid result is submitted:
 

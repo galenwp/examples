@@ -11,7 +11,7 @@
   ==
 --
 ::
-|_  {bow/bowl val/?}                                    ::< available? (y or n)
+|_  {bow/bowl val/?}                                    ::<  available? (y or n)
 ::
 ++  poke-noun
   |=  non/*

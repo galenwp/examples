@@ -1,24 +1,25 @@
 # `:sink` & `:source`
 
-These two apps demonstrate how to set up a subscription from one app to another. This can be two apps on the same urbit, or two apps between different urbits. This demo only needs one running urbit.
+Source:
 
-To run, start both apps from `:dojo`:
+* `/app/sink.hoon`
+* `/app/source.hoon`
+
+`:dojo`:
 
     ~your-urbit:dojo/examples> |start %sink
 
     ~your-urbit:dojo/examples> |start %source
 
-Then, turn the subscription on (note this is not a general syntax for starting
-a subscription):
-
     ~your-urbit:dojo/examples> :sink %on
-
-Submit some input to `sink` on the path where `sink` is
-subscribed:
 
     ~your-urbit:dojo/examples> :source {insert any noun}
 
-You should see a printf from `sink.hoon` confirming it received the
+<br />    
+
+These two apps demonstrate how to set up a subscription from one app to another. This can be two apps on the same urbit, or two apps between different urbits. This demo only needs one running urbit.
+
+To run, start both apps from `:dojo`. Then, turn the subscription on (note this is not a general syntax for starting a subscription). Submit some input to `sink` on the path where `sink` is subscribed. You should see a printf from `sink.hoon` confirming it received the
 subscription update.
 
 Let's walk through what we did:

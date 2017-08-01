@@ -1,17 +1,26 @@
 # `:click`
 
-This app demonstrates how to send data from the browser to an urbit app.
+Source:
 
-To run, start the app from `:dojo`:
+* `/app/click.hoon`
+* `/mar/click/click.hoon`
+* `/mar/click/clicks.hoon`
+* `/sur/click.hoon`
+* `/web/pages/click.hoon`
+
+`:dojo`:
 
     ~your-urbit:dojo/examples> |start %click
 
-Then, in the browser, visit:
+Web:
 
     http://localhost:8443/~~/pages/click
 
-Click the button to increment the number stored in our state.  Even better:
-open another tab and watch the increments stay in sync.
+<br />    
+
+This app demonstrates how to send data from the browser to an urbit app.
+
+Start the app and visit the web page to click the button to increment the number stored in our state. Even better, open another tab and watch the click count stay in sync.
 
 Let's walk through what happens on each click:
 

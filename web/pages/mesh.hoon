@@ -8,16 +8,16 @@
       =name     "viewport"
       =content  "width=device-width, initial-scale=1.0";
     ;title: Examples - Mesh
+    ;link
+      =type  "text/css"
+      =rel   "stylesheet"
+      =href  "/~~/pages/mesh/mesh.css";
     ;script
       =type  "text/javascript"
       =src   "https://d3js.org/d3.v4.js";
     ;script
       =type  "text/javascript"
       =src   "/~~/~/at/lib/js/urb.js";
-    ;link
-      =type  "text/css"
-      =rel   "stylesheet"
-      =href  "/~~/pages/mesh/mesh.css";
   ==
   ;body
     ;h1: :mesh

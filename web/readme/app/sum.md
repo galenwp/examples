@@ -1,24 +1,26 @@
 # `:sum`
 
-This app prints out an accumulating sum of numbers stored in `:sum`'s app state.
+Source:
 
-To run, start the app from `:dojo`:
+* `/app/sum.hoon`
+
+`:dojo`:
 
     ~your-urbit:dojo/examples> |start %sum
 
-and poke the app with an atom, converted from a noun using the `&atom` mark:
-
     ~your-urbit:dojo/examples> :sum &atom 40
-
-You should see:
-
-    [%sum 40]
-
-Then, once more:
 
     ~your-urbit:dojo/examples> :sum &atom 2
 
-The sum should now be:
+<br />    
+
+This app prints out an accumulating sum of numbers stored in `:sum`'s app state.
+
+Start the app from `:dojo` and poke it with an atom. You should see:
+
+    [%sum 40]
+
+Then, once more. The sum should now be:
 
     [%sum 42]
 

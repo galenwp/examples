@@ -1,19 +1,25 @@
 # `:ping`
 
-This application demonstrates how to send typed information to an app on
-another ship by poking it with a 'mark.'
+Source:
 
-To run, start the app from `:dojo` on two urbits:
+* `/app/ping.hoon`
+* `/mar/ping/message.hoon`
+* `/sur/ping/message.hoon`
+
+`:dojo` (you will need two running urbits to send and receive a message):
 
     ~your-urbit-1:dojo/examples> |start %ping
 
     ~your-urbit-2:dojo/examples> |start %ping
 
-Then, from your first urbit's `:dojo`:
-
     ~your-urbit-1:dojo/examples> :ping &ping-message [~your-urbit-2 'Hey, neighbor!']
 
-Your second urbit's `:dojo` should print:
+<br />    
+
+This application demonstrates how to send typed information to an app on
+another ship by poking it with a 'mark.'
+
+Start the app on two urbits in `:dojo` and send a `ping-message` from your first urbit using the command above. Your second urbit's `:dojo` should print:
 
     [%ping 'Message received!']
     [%ping %message 'Hey, neighbor!']

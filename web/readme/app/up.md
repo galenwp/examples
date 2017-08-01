@@ -1,20 +1,28 @@
 # `:up`
 
-This app continually pings a server at the 'target' URL, returning `[%all-is-well 200]` or  `[%we-have-a-problem {status-code}]`
+Source:
 
-To run, start the app from `:dojo`:
+* `/app/up.hoon`
+
+`:dojo`:
 
     ~your-urbit:dojo/examples> |start %up
 
-Then set the URL you want to ping:
-
     ~your-urbit:dojo/examples> :up &atom 'https://www.example.com'
-
-and lastly set your 'pinger' to `%on`:
 
     ~your-urbit:dojo/examples> :up &atom %on
 
-You should receive one of the two outputs listed in the first sentence above.
+<br />    
+
+This app continually pings a server at the 'target' URL.
+
+Start the app from `:dojo`, set the URL you want to ping and set your 'pinger' to `%on`. You should receive either:
+
+    [%all-is-well 200]
+
+or
+
+    [%we-have-a-problem {status-code}]
 
 Then, to turn the 'pinger' off:
 

@@ -10,7 +10,7 @@
 ++  poke-click-click
   |=  cik/^click                                        ::<  the sur not the core
   ^-  (quip move +>.$)
-  ~&  click+clicked++(cis)]
+  ~&  click+clicked++(cis)
   :_  +>.$(cis +(cis))
   %+  turn  (prey /click bow)
   |=  {o/bone *}

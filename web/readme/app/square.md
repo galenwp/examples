@@ -1,16 +1,19 @@
 # `:square`
 
-This app prints out the square of an atom.
+Source:
 
-To run, start the app from `:dojo`:
+* `/app/square.hoon`
 
+`:dojo`:
     ~your-urbit:dojo/examples> |start %square
-
-and poke the app with an atom, converted from a noun using the `&atom` mark:
 
     ~your-urbit:dojo/examples> :square &atom 10
 
-You should see:
+<br />    
+
+This app prints out the square of an atom.
+
+Start the app from `:dojo` and poke it with an atom. You should see:
 
     [%square 100]
 

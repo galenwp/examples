@@ -35,10 +35,10 @@ subject.
 
 <br />
 
-View a `README` of a `%gall` example app here that uses custom structures, or just start to play around with these in your `:dojo`:
+View the source for some custom structures used by the example apps in this repository and start to play around with them in your `:dojo`:
 
-* [`/-  click`](/~~/readme/app/click)
-* [`/-  mail-message`](/~~/readme/app/mail)
-* [`/-  mail-send`](/~~/readme/app/mail)
-* [`/-  mesh`](/~~/readme/app/mesh)
-* [`/-  ping-message`](/~~/readme/app/ping)
+* `/sur/click.hoon`
+* `/sur/mail/message.hoon`
+* `/sur/mail/send.hoon`
+* `/sur/mesh.hoon`
+* `/sur/ping/message.hoon`

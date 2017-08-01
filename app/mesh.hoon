@@ -16,7 +16,7 @@
           ==
 --
 ::
-|_  {bow/bowl {col/color net/network}}                  ::< color, social net.
+|_  {bow/bowl {col/color net/network}}                  ::<  color, social net.
 ::
 ::++  prep  _`.
 ++  poke-mesh-color

@@ -35,20 +35,15 @@ A `mesh-color` works the same way:
 
 Many app marks import the same molds from their corresponding structures in `/sur` that are used in the app. This keeps structure implementations in one place. See the `sur` readme for more details on structures.
 
-<br />
+All of the example `%gall` apps have poke arms that take certain mark types as samples (in the case of `:feed`, `:feed` uses `:talk` as the backend; you can find the poke arms the web UI is calling by searching for `/app/talk.hoon` for the `++poke-mark-name` arms). View the source for some of these custom molds used by these example `%gall` apps and start to play around with them in your `:dojo`:
 
-All of the example `%gall` apps have poke arms that take certain mark types as samples (in the case of `:feed`, `:feed` uses `:talk` as the backend; you can find the poke arms the web UI is calling by searching for `/app/talk.hoon` for the `++poke-mark-name` arms). View a `README` for one of these `%gall` example apps below to get started:
-
-* [`:click`](/~~/readme/app/click)
-* [`:echo`](/~~/readme/app/echo)
-* [`:feed`](/~~/readme/app/feed)
-* [`:foos`](/~~/readme/app/foos)
-* [`:lead`](/~~/readme/app/lead)
-* [`:mail`](/~~/readme/app/mail)
-* [`:mesh`](/~~/readme/app/mesh)
-* [`:ping`](/~~/readme/app/ping)
-* [`:pong`](/~~/readme/app/pong)
-* [`:sink` & `source`](/~~/readme/app/sink-source)
-* [`:square`](/~~/readme/app/square)
-* [`:sum`](/~~/readme/app/sum)
-* [`:up`](/~~/readme/app/up)
+* `/mar/click/click.hoon`
+* `/mar/click/clicks.hoon`
+* `/mar/hello/world.hoon`
+* `/mar/mail/message.hoon`
+* `/mar/mail/send.hoon`
+* `/mar/mesh/color.hoon`
+* `/mar/mesh/friend.hoon`
+* `/mar/mesh/friends.hoon`
+* `/mar/mesh/network.hoon`
+* `/mar/ping/message.hoon`

@@ -1,17 +1,26 @@
 # `:lead`
 
-This app is a basic leaderboard that allows you to add contestants and
-increment their scores.
+Source:
 
-To run, start the app from `:dojo`:
+* `/app/lead.hoon`
+* `/web/pages/lead.hoon`
+
+`:dojo`:
 
     ~your-urbit:dojo/examples> |start %lead
 
-Then, in the browser, visit:
+Web:
 
     http://localhost:8443/~~/pages/lead
 
-Let's briefly trace what happens on each click:
+<br />    
+
+This app is a basic leaderboard that allows you to add contestants and
+increment their scores.
+
+Start the app in `:dojo` and visit the web interface, then `Add` a name to the leaderboard. It will be stored in the app's state.
+
+Let's briefly trace what happens on each `Add`:
 
 * When you click 'Add', or when you increment a contestants score,
 `web/pages/lead.hoon` catches the event and sends that json
