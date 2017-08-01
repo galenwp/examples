@@ -15,11 +15,11 @@ We've grouped generators by section, like `hello`. To run one you'll need the di
     ~your-urbit:dojo> +hello/h1
     'Hello, world!'
 
-Get started by trying one of the following generators! From your `:dojo`, run:
+Get started by trying one of the following generators!
 
 * [`+hello/h1`](/~~/===/gen/hello/h1.hoon)
-* [`+hello/h2 %mars`](/~~/===/gen/hello/h2.hoon)
-* [`+hello/h3 %moons`](/~~/===/gen/hello/h3.hoon)
+* [`+hello/h2 'Mars'`](/~~/===/gen/hello/h2.hoon)
+* [`+hello/h3, =txt 'Mars'`](/~~/===/gen/hello/h3.hoon)
 * [`+hello/h3`](/~~/===/gen/hello/h3.hoon)
 * [`+project-euler/p1`](/~~/===/gen/project-euler/p1.hoon)
 * [`+project-euler/p2`](/~~/===/gen/project-euler/p2.hoon)
@@ -30,5 +30,33 @@ Get started by trying one of the following generators! From your `:dojo`, run:
 * [`+project-euler/p9`](/~~/===/gen/project-euler/p9.hoon)
 * [`+project-euler/p14`](/~~/===/gen/project-euler/p14.hoon)
 * [`+fun/bf 42`](/~~/===/gen/fun/bf.hoon)
+
+* `+hello/h1`
+* `+hello/h2 'Mars'`
+* `+hello/h3, =txt 'Mars'`
+* `+hello/h3`
+* `+project-euler/p1`
+* `+project-euler/p2`
+* `+project-euler/p3`
+* `+project-euler/p4`
+* `+project-euler/p5`
+* `+project-euler/p6`
+* `+project-euler/p9`
+* `+project-euler/p14`
+* `+fun/bf 42`
+
+* `/gen/hello/h1.hoon`
+* `/gen/hello/h2.hoon`
+* `/gen/hello/h3.hoon`
+* `/gen/hello/h3.hoon`
+* `/gen/project-euler/p1.hoon`
+* `/gen/project-euler/p2.hoon`
+* `/gen/project-euler/p3.hoon`
+* `/gen/project-euler/p4.hoon`
+* `/gen/project-euler/p5.hoon`
+* `/gen/project-euler/p6.hoon`
+* `/gen/project-euler/p9.hoon`
+* `/gen/project-euler/p14.hoon`
+* `/gen/fun/bf.hoon`
 
 Note: Euler problems 5 and 14 take a little while to evaluate.

@@ -41,3 +41,19 @@ Try them all!
 * [`/+  sorts`](/~~/===/lib/sorts.hoon)
 * [`/+  strings-kmp`](/~~/===/lib/strings-kmp.hoon)
 * [`/+  strings-piglatin`](/~~/===/lib/strings-piglatin.hoon)
+
+* `/+  lisp99`
+* `/+  nock`
+* `/+  parse-sexpr`
+* `/+  ski`
+* `/+  sorts`
+* `/+  strings-kmp`
+* `/+  strings-piglatin`
+
+* `/lib/lisp99.hoon`
+* `/lib/nock.hoon`
+* `/lib/parse-sexpr.hoon`
+* `/lib/ski.hoon`
+* `/lib/sorts.hoon`
+* `/lib/strings-kmp.hoon`
+* `/lib/strings-piglatin.hoon`
