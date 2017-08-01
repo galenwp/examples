@@ -6,8 +6,6 @@ title: Applications
 
 `%gall` is the Urbit application driver.
 
-> If you're not viewing this from your urbit's web interface, follow our installation instructions [on Github](https://github.com/urbit/examples) and come back here to start these examples up!
-
 Apps live under `/app` in a `%clay` desk. `%gall` apps hold state, respond to subscription requests and synchronizes state across ships.  
 
 First apps need to be started, then you can "poke" their arms from either the `:dojo` or from the web.

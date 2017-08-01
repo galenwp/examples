@@ -3,11 +3,24 @@ title: Read Me
 anchor: none
 ---
 
-### Get started!
+# Urbit examples
 
 Let's get you running your first examples!
 
-> If you're not viewing this from your urbit's web interface, follow our installation instructions [on Github](https://github.com/urbit/examples) and come back here to load these examples up!
+If you're viewing this from your Urbit, you're ready to try out the example programs we have copied in to your ship.  (If not, go back to GH).
+
+## Examples library
+
+We have examples of apps, generators, and libraries here.  [Could write something on what each one is]
+
+* [Applications](/~~/readme/app)
+* [Generators](/~~/readme/gen)
+* [Libraries](/~~/readme/lib)
+* [Web](/~~/readme/web)
+
+Before diving all the way in, you can start with a few quick `hello world`-style examples below.
+
+## Quickstart
 
 #### `:hello` app
 
@@ -49,6 +62,8 @@ Try the third with and without a sample where it will default:
 
 Generators offer a great combination of simplicity, flexibility and power. You can find the source for the above examples in `/gen/hello` of this repo.
 
+[Check out the rest of the generators](generators readme)
+
 Let's look at libraries next.
 
 #### `/+hello` library
@@ -62,15 +77,6 @@ Lastly, let's load up your first library. From `:dojo`:
 (Note the two spaces - this is a tall-form `%ford` rune)
 
 Libraries are a great way to keep useful Hoon cores in one place to share between apps, generators and the rest of the Arvo system. The source for this library is at `/lib/hello.hoon` of this repository.
-
-### Jump in, have fun!
-
-Now that you're warmed up, you're free to jump into these `README`s to dive into the specifics of these different Urbit examples:
-
-* [Applications](/~~/readme/app)
-* [Generators](/~~/readme/gen)
-* [Libraries](/~~/readme/lib)
-* [Web](/~~/readme/web)
 
 <br />
 
