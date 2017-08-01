@@ -34,6 +34,8 @@ subject.
 
 Try them all!
 
+> XX Galen: which of the three?
+
 * [`/+  lisp99`](/~~/===/lib/lisp99.hoon)
 * [`/+  nock`](/~~/===/lib/nock.hoon)
 * [`/+  parse-sexpr`](/~~/===/lib/parse-sexpr.hoon)

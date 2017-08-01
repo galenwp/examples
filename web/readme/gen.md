@@ -17,6 +17,8 @@ We've grouped generators by section, like `hello`. To run one you'll need the di
 
 Get started by trying one of the following generators!
 
+> XX Galen: which of the three?
+
 * [`+hello/h1`](/~~/===/gen/hello/h1.hoon)
 * [`+hello/h2 'Mars'`](/~~/===/gen/hello/h2.hoon)
 * [`+hello/h3, =txt 'Mars'`](/~~/===/gen/hello/h3.hoon)
